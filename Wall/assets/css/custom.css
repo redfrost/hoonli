@@ -1,0 +1,359 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+body {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/* SELECTED TEXT */
+::selection { background: #ff5e99; color: #FFFFFF; }
+::-moz-selection { background: #ff5e99; color: #FFFFFF; }
+
+a {
+	-webkit-transition: all 150ms ease;
+	-moz-transition: all 150ms ease;
+	-ms-transition: all 150ms ease;
+	-o-transition: all 150ms ease;
+	transition: all 150ms ease; 
+
+	/*
+	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateZ(0);
+	*/
+	}
+
+a:hover {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
+	filter: alpha(opacity=50); /* IE7 */
+	opacity: 0.6;
+}
+
+
+/* Layout */
+.main { float: right; }
+.sidebar { float: left; }
+
+.aligncenter { display: block; margin: 0 auto; }
+.alignleft { float: left; }
+.alignright { float: right; }
+figure.alignnone { margin-left: 0; margin-right: 0; }
+.lighter {
+    font-weight: 200;
+}
+
+.menu { list-style: none outside none; margin: 12px 0 20px 0; }
+.main p { text-align: justify; }
+
+.menu a {
+    color: #000000;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 26px;
+}
+
+.menu li.active a { text-decoration: underline; }
+
+
+.entry-summary { margin: 0 0 60px 0; }
+.entry-content { margin: 0 0 60px 0; }
+
+
+
+
+/* Thumbnails 1 */
+
+.home .entry-title, .home .updated, .home .author, .gallery-caption { display: none; }
+
+.thumbnails > li {
+    float: left;
+    margin-bottom: 0px !important;
+    margin-left: 0px !important;
+}
+
+.thumbnails {
+    list-style: none outside none;
+    margin-left: 0px;
+}
+
+.thumbnail, .gallery-icon a {
+    border: 0px;
+    border-radius: 0px;
+    box-shadow: none;
+    line-height: 20px;
+    padding: 0px;
+    transition: all 0.2s ease-in-out 0s;
+    height: 160px;
+    width: 160px;
+    overflow: hidden;
+}
+
+
+/* Thumbnails 2 */
+.gallery-icon .attachment-thumbnail {
+    max-width: 160px;
+    max-height: 160px;
+}
+
+.gallery.default .gallery-item, #content .gallery.default .gallery-item {
+    margin-top: 0px !important;
+    padding: 0;
+    text-align: left !important;
+    display: inline-block;
+}
+
+.gallery.columns_6 .gallery-item, #content .gallery.columns_6 .gallery-item {
+    width: 156px !important;
+}
+
+dl.gallery-item {
+    margin-bottom: 0px !important;
+}
+
+
+
+
+
+/* Popup style */
+.fancybox-bg {
+    display: none !important;
+}
+
+#fancybox-title {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+    font-size: 12px;
+    text-transform: uppercase !;
+}
+.fancybox-title-outside {
+    color: #888888 !important;
+
+}
+
+
+
+
+/* Header */
+.banner .container {
+    border-bottom: 1px solid #CCCCCC;
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 1000;
+}
+
+h1.site-title a, h1.site-title a:hover {
+    color: #181818;
+    font-weight: 100;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.site-title { padding: 40px 0 0; text-align: right; }
+
+.site-description { display:none ;color: #777777; font-weight: lighter; } 
+
+
+
+
+/* Footer */
+.content-info {
+    clear: both;
+    padding-top: 10px;
+    position: relative;
+}
+
+.content-info > .container {
+    border-top: 1px solid #CCCCCC;
+    padding: 1em 0em 2em;
+}
+
+.content-info ul.menu { margin: 0 0 24px; padding: 0; list-style-type: none; }
+.content-info ul.menu li { display: inline; margin-right: 1em; }
+
+.content-info p.copy small { font-size: 1em; font-weight: bold; }
+
+
+.content-info .textwidget {
+    color: #999;
+    padding-bottom: 4px;
+    font-weight: lighter;
+    text-align: justify;    
+}
+
+
+/* Form */
+.wpcf7-text, .wpcf7-textarea {
+    width: 90%;
+}
+
+
+
+
+/* Responsive */
+
+@media (min-width:768px) and (max-width:979px) {
+
+    .thumbnail, .gallery-icon a {
+        height: 144px;
+        width: 144px;
+    }
+
+}
+
+@media (max-width:767px) {
+
+    .thumbnail, .gallery-icon a {
+        height: 144px;
+        width: 144px;
+    }
+    .site-title { 
+        text-align: center; 
+        padding: 10px 0 10px 0;
+    }
+    .sidebar {
+        float: left;
+        text-align: center;
+        border-top: 3px solid #ccc;
+        border-bottom: 3px solid #ccc;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width:759px) {
+
+    .thumbnail, .gallery-icon a {
+        height: 143px;
+        width: 143px;
+    }
+
+}
+
+@media (max-width:754px) {
+
+    .thumbnail, .gallery-icon a {
+        height: 142px;
+        width: 142px;
+    }
+
+}
+
+@media (max-width:749px) {
+
+    .thumbnail, .gallery-icon a {
+        height: 141px;
+        width: 141px;
+    }
+
+}
+
+@media (max-width:744px) {
+
+    .thumbnail, .gallery-icon a {
+        height: 140px;
+        width: 140px;
+    }
+
+}
+
+@media (max-width:739px) {
+
+    .thumbnail, .gallery-icon a {
+        height: 139px;
+        width: 139px;
+    }
+
+}
+
+
+@media (max-width:720px) {
+
+    .thumbnail, .gallery-icon a {
+        height: 136px;
+        width: 136px;
+    }
+
+}
+
+@media (max-width:680px) {
+
+    .thumbnail, .gallery-icon a {
+        height: 160px;
+        width: 160px;
+    }
+
+}
+
+@media (max-width:640px) {
+
+    .thumbnail, .gallery-icon a {
+        height: 150px;
+        width: 150px;
+    }
+
+}
+
+@media (max-width:639px) {
+
+    .thumbnail, .gallery-icon a {
+        height: 149px;
+        width: 149px;
+    }
+
+}
+
+@media (max-width:595px) {
+
+    .thumbnail, .gallery-icon a {
+        height: 138px;
+        width: 138px;
+    }
+
+}
+
+
+@media (max-width:576px) {
+
+    .thumbnail, .gallery-icon a {
+        height: 134px;
+        width: 134px;
+    }
+
+}
+
+/* iPhone 5 fix */
+@media (max-width:568px) {
+
+    .thumbnail, .gallery-icon a {
+        height: 132px;
+        width: 132px;
+    }
+
+}
+
+
+@media (max-width:540px) {
+
+    .thumbnail, .gallery-icon a {
+        height: 125px;
+        width: 125px;
+    }
+
+}
+
+@media (max-width:480px) {
+
+    .thumbnail, .gallery-icon a {
+        height: 146px;
+        width: 146px;
+    }
+
+}
+
+@media (max-width:320px) {
+
+    .thumbnail, .gallery-icon a {
+        height: 140px;
+        width: 140px;
+    }
+
+}
+
