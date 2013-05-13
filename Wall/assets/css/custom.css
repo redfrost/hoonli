@@ -111,6 +111,14 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 
 }
 
+/* Flicker Fix */
+
+#fancybox-overlay 
+{
+    -webkit-transform:translate3d(0,0,0); /* Safari Flicker Fix #1 */
+    -webkit-backface-visibility: hidden; /* Safari Flicker Fix #2 */ 
+}
+
 
 
 
@@ -160,6 +168,8 @@ h1.site-title a, h1.site-title a:hover {
     font-weight: lighter;
     text-align: justify;    
 }
+
+
 
 
 /* Form */
