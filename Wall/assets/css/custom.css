@@ -7,7 +7,11 @@ body {
 /* SELECTED TEXT */
 ::selection { background: #ff5e99; color: #FFFFFF; }
 ::-moz-selection { background: #ff5e99; color: #FFFFFF; }
-
+	/* Remove Firefox selection dot */
+	a, a:focus, a:active, a:hover, object, embed { outline: none; }
+	:-moz-any-link:focus { outline: none; }
+	input::-moz-focus-inner { border: 0; }
+	:focus { outline: 0; }
 a {
 	-webkit-transition: all 150ms ease;
 	-moz-transition: all 150ms ease;

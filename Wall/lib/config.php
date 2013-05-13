@@ -11,9 +11,9 @@ add_theme_support('jquery-cdn');            // Enable to load jQuery from the Go
 
 
 //Header Information
-define('SITE_DESC', 'Art of Jaehoon Lee');  // Website description 
-define('SITE_AUTHOR', 'Redfrost');  // Site owner
-define('SITE_PUBLISHER', 'Massivesound');  // Site developer or publisher
+define('SITE_DESC', 'Art of Jae Hoon Lee');  // Website description 
+define('SITE_AUTHOR', 'Jae Hoon Lee');  // Site owner
+define('SITE_PUBLISHER', 'Redfrost - Alex Lim');  // Site developer or publisher
 define('SITE_KEYWORDS', 'art');  //Search keywords
 
 
@@ -67,7 +67,12 @@ function roots_display_sidebar() {
      * Any of these page templates that return true won't show the sidebar
      */
     array(
-      'template-custom.php'
+      'template-custom.php',
+      'template-event.php',
+      'template-front.php',
+      'template-fullwidth.php',
+      'template-maintenance.php'
+
     )
   );
 

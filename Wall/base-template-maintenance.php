@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>JAEHOON LEE - Welcome</title>
+<title>JAEHOON LEE - Maintenance</title>
 <style type="text/css">
 
 
@@ -124,8 +124,7 @@ p.copyright {
 <div class="main_picture_scroll">
 <div class="imagescroll">
 </div>
-<p>Welcome</p>
-<p><a class="btn btn-large btn-danger" href="http://jaehoonlee.net/">> VIEW WORKS</a></p>
+<p>Site is under maintenance.</p>
 <p class="copyright">&copy; Jaehoon Lee | Webs development by <a href="http://simonalex.com/">Redfrost</a></p>
 </div>   
 
