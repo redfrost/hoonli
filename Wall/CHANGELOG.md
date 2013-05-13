@@ -2,6 +2,7 @@
 * Enhanced responsive layout support for thumbnails
 * Enhanced responsive layout support for embedded video
 * Dropped File gallery plugin support - WP native gallery is good now
+* Custom 404 page
 
 
 ### 2.0: 12-May-2013
