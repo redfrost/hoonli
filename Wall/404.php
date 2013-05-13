@@ -92,7 +92,7 @@
             }
                         
             .warning p {
-                font-size: 16px;
+                font-size: 14px;
                 line-height: 20px;
             }
                     
@@ -208,7 +208,64 @@
                         100% { opacity:0;}            
                     }                 
 
+           /* Mobile only */
+            @media only screen 
+            and (max-width : 767px) {
+                     .main .container {
+                         border: 0px !important;
+                     }  
+                     .warning .sign.alert {
+                         display :none;
+                     }         
+                    .main h1 {
+                        font-size: 45px !important;
+                    }
+                    .main h2 {
+                        font-size: 28px !important;
+                        line-height: 20px;
+                        margin: 12px 0 0;
+                    }
+                    .main h3 {
+                        font-size: 13px !important;
+                        line-height: 20px;
+                        margin: 20px 0 8px;
+                    }  
+                         
+                    .main h4 {
+                        margin: 0px 0 0px 23px;
+                        text-transform: uppercase;
+                        font-size: 14px !important;
+                    }   
+                    .author {
+                        font-size: 10px !important;
+                        padding: 0 0 0 15px !important;
+                    }          
+                    .warning p {
+                        font-size: 12px !important;
+                        line-height: 18px !important;
+                    }
+                    .warning {
+                        margin: 14px 0 !important;
+                        padding: 15px 10px 0px !important;
+                        display: inline-block !important;
+                    }
+                    .contact {
+                        font-size: 10px;
+                        margin-bottom: 16px;
+                        padding: 6px 20px;
+                        line-height: 13px;
+                        border-radius: 5px 5px 5px 5px;
+                    }
+                    .sign.call {
+                        margin: 8px 8px 0 0;
+                    }
+                    ul {
+                        font-size: 12px !important;
+                        margin: 0px 0px 24px !important;
+                        padding: 0 0 0 40px !important;
+                    }
 
+            }
         
         </style>
 
@@ -237,7 +294,7 @@
             <div id="footer">            
                 <div class="contact"><i class="sign call">Tip: </i><p class="marquee">If you think this is a server error, please contact the system administrator.</p></div>            
                         
-                <p class="copyright">&copy; 2013 Redfrost.com</p>
+                <p class="copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
             </div> 
         </div>     
                         
