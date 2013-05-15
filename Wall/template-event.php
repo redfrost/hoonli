@@ -14,11 +14,13 @@ body { margin-top: 60px; }
 
 
 @media (max-width:768px) {
-    .top-banner { margin: -60px -22px 0px -22px;  }
+    .top-banner { margin: -30px -20px 0px; }
 }
+
 
 @media (max-width:767px) {
     .more { float: left; }
+    .top-banner { margin: -30px -20px 0px; }
 }
 
 
