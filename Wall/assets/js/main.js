@@ -43,3 +43,14 @@
 	
 
 
+/* Display caption in Fancybox plugin */
+jQuery(document).ready(function($) {
+	jQuery( 'a[href$=".jpg"], a[href$=".jpeg"], a[href$=".gif"], a[href$=".png"]' ).each( function () {
+			var imageTitle = '';
+			if ( jQuery( this ).next().hasClass( 'wp-caption-text' ) ) {
+				imageTitle = jQuery( this ).next().text();
+			}
+			
+			jQuery( this ).attr( 'title', imageTitle );
+		});
+	});

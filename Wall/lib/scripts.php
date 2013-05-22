@@ -18,7 +18,8 @@ function roots_scripts() {
   wp_enqueue_style('roots_bootstrap', get_template_directory_uri() . '/assets/css/base.css', false, null);
   wp_enqueue_style('roots_bootstrap_responsive', get_template_directory_uri() . '/assets/css/responsive.css', array('roots_bootstrap'), null);
   wp_enqueue_style('roots_app', get_template_directory_uri() . '/assets/css/custom.css', false, null);
-
+  wp_enqueue_style('roots_icons', get_template_directory_uri() . '/assets/css/font-awesome.css', false, null); //Font-awsome Icon
+  
   // Load style.css from child theme
   if (is_child_theme()) {
     wp_enqueue_style('roots_child', get_stylesheet_uri(), false, null);
