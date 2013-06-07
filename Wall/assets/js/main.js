@@ -17,6 +17,16 @@
 			} );
 		/* ]]> */
 	
+
+    // To Top
+		    $(document).ready(function() {
+		    
+		      $('.to-top a').smoothScroll({offset: 0});
+		    
+		    });
+
+
+
 	
 <!-- Image Scroll -->	
     // speed in milliseconds
