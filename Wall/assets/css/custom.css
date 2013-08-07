@@ -329,7 +329,20 @@ h1.site-title a, h1.site-title a:hover {
 
 
 
+/* Button */
+.btn { border-radius: 0px !important;  }
+.btn-inverse { background: #333!important; }
 
+/* Narrow content */    
+@media (max-width: 1600px) {
+.page-template-template-event-php .width-768 { 
+    max-width: 768px!important;
+    margin: -20px auto 0; 
+    }
+}
+@media (min-width: 1601px) {
+    .page-template-template-event-php .width-768 { margin: -30px auto 0; }
+}
 
 
     
